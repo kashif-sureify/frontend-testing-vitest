@@ -6,6 +6,7 @@ import { add, divide, multiply, subtract } from "../src/mathUtils";
 // it/test: Defines an individual test case.
 
 // expect: Used to write assertions (i.e., check if values match expectations).
+
 describe("Math Utilities", () => {
   it("should sum two numbers", () => {
     expect(add(2, 4)).toBe(6);
@@ -33,3 +34,18 @@ describe("Math Utilities", () => {
     expect(() => divide(9, 0)).toThrow("Divison by zero is not allowed");
   });
 });
+
+// describe("Math Utilities", () => {
+//   it("should sum two numbers", () => {
+//     // Arrange
+//     const a = 2;
+//     const b = 6;
+
+//     // Act
+
+//     const result = a + b;
+
+//     // Assert
+//     expect(add(a, b)).toBe(result);
+//   });
+// });
